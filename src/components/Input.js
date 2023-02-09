@@ -39,10 +39,21 @@ const Input = () => {
 
     return (
         <div>
-            <input value={text} onChange={(e) => setText(e.target.value)} />
-            <button onClick={onClickAddText}>
-                Baby {addText} is called...
-            </button>
+            <div className="flex mb-8">
+                <input
+                    className="mx-7 bg-gray-50 border border-violet-500 text-violet-900 text-sm rounded-full focus:ring-violet-600 focus:border-violet-600 block  p-2.5 "
+                    placeholder="type animal here"
+                    required
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
+                />
+                <button
+                    className="h-10 px-6 font-semibold rounded-full bg-violet-600 text-white"
+                    onClick={onClickAddText}
+                >
+                    Baby {addText} is called...
+                </button>
+            </div>
             <Table addText={addText} text={text} baby={baby} />
         </div>
     );

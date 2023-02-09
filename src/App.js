@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-// import Table from "./components/Table";
+import Header from "./components/Header";
 import Input from "./components/Input";
 
 function App() {
-    return <Input />;
+    return (
+        <div className="font-mono">
+            <Header />
+            <Input />
+        </div>
+    );
 }
 
 export default App;
