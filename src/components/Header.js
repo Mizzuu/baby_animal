@@ -4,19 +4,19 @@ import pup from "./pup.jpg";
 
 const Header = () => {
     return (
-        <div className="text-slate-900 flex mb-20">
-            <div className="flex-none w-64 relative">
+        <div className="text-slate-900 flex mx-auto my-20 rounded-lg bg-slate-100 w-2/3">
+            <div className="flex-none w-60 relative">
                 <img
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                     src={pup}
                     alt="dog pup with a woman"
                 />
             </div>
-            <div className="h-full text-center ml-20">
+            <div className="h-full w-5/6 text-center mx-10">
                 <h1 className="mt-5 mb-10 text-xl font-bold">
                     How do we call baby animal?
                 </h1>
-                <div className="w-80">
+                <div className=" mb-10">
                     <p className="text-start">
                         I realized there are several ways to call baby animals
                         like cub for bears, pup for doggies... This app helps
